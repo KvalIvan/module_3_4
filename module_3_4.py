@@ -1,9 +1,8 @@
 def single_root_words(root_word, *other_words):
     same_words = []
-    root_word = root_word.lower()
     for i in other_words:
-        i = i.lower()
-        if i in root_word or root_word in i:
+        j = i.lower()
+        if j in root_word.lower() or root_word.lower() in j:
             same_words.append(i)
     return same_words
 
